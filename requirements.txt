@@ -1,1 +1,2 @@
-pip freeze > requirements.txt
+yfinance==0.1.63
+Flask==2.0.1
