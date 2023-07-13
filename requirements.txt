@@ -72,5 +72,4 @@ pycodestyle==2.10.0
 pyflakes==3.0.1
 PyGetWindow==0.0.9
 PyMsgBox==1.0.9
-pyobjc==9.0.1
 yfinance==0.2.22
