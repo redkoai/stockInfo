@@ -73,7 +73,6 @@ pyflakes==3.0.1
 PyGetWindow==0.0.9
 PyMsgBox==1.0.9
 pyobjc==9.0.1
-pyobjc-core==9.0.1
 pyobjc-framework-Accessibility==9.0.1
 pyobjc-framework-Accounts==9.0.1
 pyobjc-framework-AddressBook==9.0.1
