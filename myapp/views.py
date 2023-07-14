@@ -12,4 +12,4 @@ def get_stock_info(request):
         'change': info['change'],
         'percent_change': info['percent_change'],
     }
-    return JsonResponse(data)
+    return JsonResponse(data, safe=False)

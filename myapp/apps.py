@@ -25,3 +25,4 @@ class StockInfoConfig(AppConfig):
 
     def ready(self):
         import stock_info.views
+        from stock_info.views import get_stock_info
