@@ -7,6 +7,9 @@ def get_stock_info(request):
     info = stock.info
     data = {
         'ticker': ticker,
-        'name': info,
+        'name': info['name'],
+        'price': info['current'],
+        'change': info['change'],
+        'percent_change': info['percent_change'],
     }
-    return JsonResponse(info)
+    return JsonResponse(data)
