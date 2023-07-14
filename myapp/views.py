@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import JsonResponse
+import yfinance as yf
 
 def get_stock_info(request):
     ticker = request.GET.get('ticker')
