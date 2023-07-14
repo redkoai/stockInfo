@@ -1,6 +1,19 @@
-from django.apps import AppConfig
+from django.shortcuts import render
+from django.http import JsonResponse
+from django.views.decorators.http import require_POST
 
+def get_stock_info(request):
+    ticker = request.POST.get('ticker')
+    # Add your code to fetch stock information using yfinance
+    # and return the desired JSON response
+    data = {
+        'ticker': ticker,
+    }
+    return JsonResponse(data)
 
-class MyappConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
-    name = 'myapp'
+@require_POST
+def index(request):
+    if request.method == 'POST':
+        return get_stock_info(request)
+    else:
+        return render(request, 'index.html')
